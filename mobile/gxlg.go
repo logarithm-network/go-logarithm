@@ -137,7 +137,7 @@ func NewNode(datadir string, config *NodeConfig) (stack *Node, _ error) {
 		// If we have the testnet, hard code the chain configs too
 		if config.LogarithmGenesis == TestnetGenesis() {
 			genesis.Config = params.TestnetChainConfig
-			if config.LogarithmNetworkID == 301333 {
+			if config.LogarithmNetworkID == 301999 {
 				config.LogarithmNetworkID = 3
 			}
 		}
