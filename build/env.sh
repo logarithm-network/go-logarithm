@@ -10,7 +10,7 @@ fi
 # Create fake Go workspace if it doesn't exist yet.
 workspace="$PWD/build/_workspace"
 root="$PWD"
-ethdir="$workspace/src/github.com/logarithm"
+ethdir="$workspace/src/github.com/logarithm-network"
 if [ ! -L "$ethdir/go-logarithm" ]; then
     mkdir -p "$ethdir"
     cd "$ethdir"
