@@ -470,7 +470,7 @@ func maybeSkipArchive(env build.Environment) {
 func doDebianSource(cmdline []string) {
 	var (
 		signer  = flag.String("signer", "", `Signing key name, also used as package author`)
-		upload  = flag.String("upload", "", `Where to upload the source package (usually "ppa:logarithm/logarithm")`)
+		upload  = flag.String("upload", "", `Where to upload the source package (usually "ppa:logarithm-network/logarithm-network")`)
 		workdir = flag.String("workdir", "", `Output directory for packages (uses temp dir if unset)`)
 		now     = time.Now()
 	)
@@ -565,9 +565,9 @@ func newDebMetadata(distro, author string, env build.Environment, t time.Time) d
 // on all executable packages.
 func (meta debMetadata) Name() string {
 	if isUnstableBuild(meta.Env) {
-		return "logarithm-unstable"
+		return "logarithm-network-unstable"
 	}
-	return "logarithm"
+	return "logarithm-network"
 }
 
 // VersionString returns the debian version of the packages.
@@ -611,7 +611,7 @@ func (meta debMetadata) ExeConflicts(exe debExecutable) string {
 		// be preferred and the conflicting files should be handled via
 		// alternates. We might do this eventually but using a conflict is
 		// easier now.
-		return "logarithm, " + exe.Name
+		return "logarithm-network, " + exe.Name
 	}
 	return ""
 }
@@ -737,7 +737,7 @@ func doAndroidArchive(cmdline []string) {
 	// Build the Android archive and Maven resources
 	build.MustRun(goTool("get", "golang.org/x/mobile/cmd/gomobile"))
 	build.MustRun(gomobileTool("init", "--ndk", os.Getenv("ANDROID_NDK")))
-	build.MustRun(gomobileTool("bind", "--target", "android", "--javapkg", "org.logarithm", "-v", "github.com/logarithm-network/go-logarithm/mobile"))
+	build.MustRun(gomobileTool("bind", "--target", "android", "--javapkg", "org.logarithm-network", "-v", "github.com/logarithm-network/go-logarithm/mobile"))
 
 	if *local {
 		// If we're building locally, copy bundle to build dir and skip Maven
