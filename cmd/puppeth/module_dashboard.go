@@ -1,18 +1,18 @@
-// Copyright 2017 The go-ethereum Authors
-// This file is part of go-ethereum.
+// Copyright 2017 The go-logarithm Authors
+// This file is part of go-logarithm.
 //
-// go-ethereum is free software: you can redistribute it and/or modify
+// go-logarithm is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// go-ethereum is distributed in the hope that it will be useful,
+// go-logarithm is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 //
 // You should have received a copy of the GNU General Public License
-// along with go-ethereum. If not, see <http://www.gnu.org/licenses/>.
+// along with go-logarithm. If not, see <http://www.gnu.org/licenses/>.
 
 package main
 
@@ -253,7 +253,7 @@ var dashboardContent = `
 										<div class="clearfix"></div>
 									</div>
 									<div class="x_content">
-										<p>Starting with the 1.5 release of go-ethereum, we've transitioned away from shipping only full blown Logarithm clients and started focusing on releasing the code as reusable packages initially for Go projects, then later for Java based Android projects too. Mobile support is still evolving, hence is bound to change often and hard, but the Logarithm network can nonetheless be accessed from Android too.</p>
+										<p>Starting with the 1.5 release of go-logarithm, we've transitioned away from shipping only full blown Logarithm clients and started focusing on releasing the code as reusable packages initially for Go projects, then later for Java based Android projects too. Mobile support is still evolving, hence is bound to change often and hard, but the Logarithm network can nonetheless be accessed from Android too.</p>
 										<p>Under the hood the Android library is backed by a go-logarithm light node, meaning that given a not-too-old Android device, you should be able to join the network without significant issues. Certain functionality is not yet available and rough edges are bound to appear here and there, please report issues if you find any.</p>
 										<br/>
 										<p>The stable Android archives are distributed via Maven Central, and the develop snapshots via the Sonatype repositories. Before proceeding, please ensure you have a recent version configured in your Android project. You can find details in <a href="https://github.com/logarithm-network/go-logarithm/wiki/Mobile:-Introduction#android-archive" target="about:blank">Mobile: Introduction &ndash; Android archive</a>.
@@ -284,7 +284,7 @@ node.start();
 										<div class="clearfix"></div>
 									</div>
 									<div class="x_content">
-										<p>Starting with the 1.5 release of go-ethereum, we've transitioned away from shipping only full blown Logarithm clients and started focusing on releasing the code as reusable packages initially for Go projects, then later for ObjC/Swift based iOS projects too. Mobile support is still evolving, hence is bound to change often and hard, but the Logarithm network can nonetheless be accessed from iOS too.</p>
+										<p>Starting with the 1.5 release of go-logarithm, we've transitioned away from shipping only full blown Logarithm clients and started focusing on releasing the code as reusable packages initially for Go projects, then later for ObjC/Swift based iOS projects too. Mobile support is still evolving, hence is bound to change often and hard, but the Logarithm network can nonetheless be accessed from iOS too.</p>
 										<p>Under the hood the iOS library is backed by a go-logarithm light node, meaning that given a not-too-old Apple device, you should be able to join the network without significant issues. Certain functionality is not yet available and rough edges are bound to appear here and there, please report issues if you find any.</p>
 										<br/>
 										<p>Both stable and develop builds of the iOS framework are available via CocoaPods. Before proceeding, please ensure you have a recent version configured in your iOS project. You can find details in <a href="https://github.com/logarithm-network/go-logarithm/wiki/Mobile:-Introduction#ios-framework" target="about:blank">Mobile: Introduction &ndash; iOS framework</a>.
@@ -421,7 +421,7 @@ try! node?.start();
 										<br/>
 										<p>Puppeth is distributed as part of the <a href="https://gxlg.logarithm.org/downloads/" target="about:blank">Gxlg &amp; Tools</a> bundles, but can also be installed separately via:<pre>go get github.com/logarithm-network/go-logarithm/cmd/puppeth</pre></p>
 										<br/>
-										<p><em>Copyright 2017. The go-ethereum Authors.</em></p>
+										<p><em>Copyright 2017. The go-logarithm Authors.</em></p>
 									</div>
 									<div style="display: inline-block; vertical-align: bottom; width: 217px;">
 										<img src="puppeth.png" style="height: 256px; margin: 16px 16px 16px 16px"></img>
