@@ -69,7 +69,7 @@ const (
 	SWARM_ENV_ENS_ADDR        = "SWARM_ENS_ADDR"
 	SWARM_ENV_CORS            = "SWARM_CORS"
 	SWARM_ENV_BOOTNODES       = "SWARM_BOOTNODES"
-	GHBC_ENV_DATADIR          = "GHBC_DATADIR"
+	GXLG_ENV_DATADIR          = "GXLG_DATADIR"
 )
 
 // These settings ensure that TOML keys use the same names as Go struct fields.
@@ -233,7 +233,7 @@ func envVarsOverride(currentConfig *bzzapi.Config) (config *bzzapi.Config) {
 		}
 	}
 
-	if datadir := os.Getenv(GHBC_ENV_DATADIR); datadir != "" {
+	if datadir := os.Getenv(GXLG_ENV_DATADIR); datadir != "" {
 		currentConfig.Path = datadir
 	}
 

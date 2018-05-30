@@ -38,9 +38,9 @@ BOOTNODE_PUBKEY="760c4460e5336ac9bbd87952a3c7ec4363fc0a97bd31c86430806e287b437fd
 BOOTNODE_URL="enode://${BOOTNODE_PUBKEY}@${BOOTNODE_IP}:${BOOTNODE_PORT}"
 
 # static gxlg configuration
-GHBC_IP="192.168.33.3"
-GHBC_RPC_PORT="30199"
-GHBC_RPC_URL="http://${GHBC_IP}:${GHBC_RPC_PORT}"
+GXLG_IP="192.168.33.3"
+GXLG_RPC_PORT="30199"
+GXLG_RPC_URL="http://${GHBC_IP}:${GHBC_RPC_PORT}"
 
 usage() {
   cat >&2 <<USAGE
@@ -164,12 +164,12 @@ start_gxlg_node() {
     --unlock    "${address}"
     --password  "${dir}/password"
     --rpc
-    --rpcaddr   "${GHBC_IP}"
-    --rpcport   "${GHBC_RPC_PORT}"
+    --rpcaddr   "${GXLG_IP}"
+    --rpcport   "${GXLG_RPC_PORT}"
     --verbosity "6"
   )
 
-  start_node "gxlg" "${GHBC_IP}" "$(which gxlg)" ${args[@]}
+  start_node "gxlg" "${GXLG_IP}" "$(which gxlg)" ${args[@]}
 }
 
 start_swarm_nodes() {
