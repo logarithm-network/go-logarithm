@@ -62,7 +62,7 @@ func init() {
 		}
 	}
 	if runtime.GOOS == "windows" {
-		DefaultConfig.Ethash.DatasetDir = filepath.Join(home, "AppData", "HotelByte")
+		DefaultConfig.Ethash.DatasetDir = filepath.Join(home, "AppData", "Logarithm")
 	} else {
 		DefaultConfig.Ethash.DatasetDir = filepath.Join(home, ".logarithm")
 	}

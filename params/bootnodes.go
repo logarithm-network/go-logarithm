@@ -19,7 +19,7 @@ package params
 // MainnetBootnodes are the enode URLs of the P2P bootstrap nodes running on
 // the main Logarithm network.
 var MainnetBootnodes = []string{
-	// HotelByte Foundation Go Bootnodes
+	// Logarithm Foundation Go Bootnodes
 	"enode://5de3354f642561437c398a0c4cb930cb7a65497b02128ae50dbfc08ef0fd91f7fe3c72b7cac0f046dcfc638cfb3ac76feae27f6ec6dcc217170a0da6dfb102b1@34.242.210.96:30909", // EU
 }
 

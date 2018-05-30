@@ -29,9 +29,9 @@ Section "Gxlg" GXLG_IDX
   SimpleFC::AdvRemoveRule "Gxlg UDP discovery (UDP:30909)"
 
   # Firewall - add rules
-  SimpleFC::AdvAddRule "Gxlg incoming peers (TCP:30909)" ""  6 1 1 2147483647 1 "$INSTDIR\gxlg.exe" "" "" "HotelByte" 30909 "" "" ""
-  SimpleFC::AdvAddRule "Gxlg outgoing peers (TCP:30909)" ""  6 2 1 2147483647 1 "$INSTDIR\gxlg.exe" "" "" "HotelByte" "" 30909 "" ""
-  SimpleFC::AdvAddRule "Gxlg UDP discovery (UDP:30909)" "" 17 2 1 2147483647 1 "$INSTDIR\gxlg.exe" "" "" "HotelByte" "" 30909 "" ""
+  SimpleFC::AdvAddRule "Gxlg incoming peers (TCP:30909)" ""  6 1 1 2147483647 1 "$INSTDIR\gxlg.exe" "" "" "Logarithm" 30909 "" "" ""
+  SimpleFC::AdvAddRule "Gxlg outgoing peers (TCP:30909)" ""  6 2 1 2147483647 1 "$INSTDIR\gxlg.exe" "" "" "Logarithm" "" 30909 "" ""
+  SimpleFC::AdvAddRule "Gxlg UDP discovery (UDP:30909)" "" 17 2 1 2147483647 1 "$INSTDIR\gxlg.exe" "" "" "Logarithm" "" 30909 "" ""
 
   # Set default IPC endpoint (https://github.com/ethereum/EIPs/issues/147)
   ${EnvVarUpdate} $0 "LOGARITHM_SOCKET" "R" "HKLM" "\\.\pipe\gxlg.ipc"
